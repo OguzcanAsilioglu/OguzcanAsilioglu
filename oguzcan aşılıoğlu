@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication26
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            Console.Write("1.sayıyı giriniz:"); a = Convert.ToInt32(Console.ReadLine());
+            Convert.ToString(Convert.ToInt32(a), 2);
+            Console.Write("2. sayıyı giriniz"); b = Convert.ToInt32(Console.ReadLine());
+            Convert.ToString(Convert.ToInt32(b), 2);
+            Console.WriteLine();
+            Console.Write("sayılar toplamı:");
+            Console.WriteLine(Convert.ToString(Convert.ToInt32(a + b)));
+            Console.Write("binary toplamı:");
+            Console.WriteLine(Convert.ToString(Convert.ToInt32(a + b), 2));
+            Console.ReadKey();
+        }
+    }
+}
